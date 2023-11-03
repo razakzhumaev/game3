@@ -34,6 +34,7 @@ mode1() {
 
   print('Введите ваше число :');
   while (myInput != compNumber) {
+    count++;
     print('Я загадал число :${myInput = int.parse(stdin.readLineSync()!)} ');
     if (myInput < compNumber) {
       print('Число компьютера Больше');
@@ -44,9 +45,8 @@ mode1() {
     } else {
       print('Да, все верно, Вы угадали загаданное число');
     }
-    count++;
-    print('Вы угадали число компьютера $compNumber за $count шагa(ов)');
   }
+    print('Вы угадали число компьютера $compNumber за $count шагa(ов)');
 }
 
 mode2() {
